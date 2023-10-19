@@ -7,12 +7,9 @@ const ArrayQuestion = () => {
   const [itemList, setItemList] = React.useState(arrItem)
 
   function moveSelectedIndexToFirst(array, selectedIndex) {
-    // Make a copy of the original array
     const newArray = array.slice();
     if (selectedIndex >= 0 && selectedIndex < newArray.length) {
-      // Remove the element at the selected index
       const removedElement = newArray.splice(selectedIndex, 1)[0];
-      // Insert the removed element at the beginning
       newArray.unshift(removedElement);
     }
     return setItemList(newArray);
