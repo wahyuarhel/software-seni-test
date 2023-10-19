@@ -2,7 +2,7 @@ import React from 'react'
 import PropTypes from 'prop-types'
 
 
-const MoveArray = () => {
+const ArrayQuestion = () => {
   const arrItem = ["A", "B", "C", "D", "E"]
   const [itemList, setItemList] = React.useState(arrItem)
 
@@ -85,10 +85,12 @@ const MoveArray = () => {
     <div>
       <p>move selected list to first place</p>
       <ListToTop items={itemList} />
+      <br /><br />
       <p>Remove Selected item</p>
       <RemoveSelectedItem items={itemList2} />
     </div>
+
   )
 }
 
-export default MoveArray
+export default ArrayQuestion

@@ -1,13 +1,15 @@
 import './App.css'
-import MoveArray from './question/moveArray'
+import ActiveClassRating from './question/activeClassRating'
+import MoveArray from './question/arrayQuestion'
 
 function App() {
   return (
 
     <div>
-      <p>TEST SoftwareSeni</p>
+      <p>Software Seni Test</p>
       <MoveArray />
-      <p>active class for rate component</p>
+      <br /><br />
+      <ActiveClassRating />
     </div>
 
   )
